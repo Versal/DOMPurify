@@ -180,7 +180,7 @@
             if(dom.body === null) {
                 dom = document.implementation.createHTMLDocument('');
                 dom.body.innerHTML = dirty;
-                if(dom.body.firstChild.nodeName && dom.body.firstChild.nodeName
+                if(dom.body.firstChild && dom.body.firstChild.nodeName
                     && !WHOLE_DOCUMENT
                     && dom.body.firstChild.nodeName === 'STYLE'){
                     dom.body.removeChild(dom.body.firstChild);
